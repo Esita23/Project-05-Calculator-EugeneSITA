@@ -2,22 +2,32 @@
 import{calculate}from "./calculator.js"
 
 // TODO: Faire la manipulation du DOM dans ce fichier
-function calculator(m,n){
-    const buttons = [];
-    const Nums= [];
-    let addition= n+m;
-    let product= n*m;
-    let soustraction= n-m;
-    let pourcentage = n%m;
-    let division = n/m;
+// add var global
+
+    const affElement=document.querySelector("#input")
+    const memoElement = document.querySelector("#calcul")
+    let precedent=0;
+    let affichage="";
+    let operation =null;
+    let memoire;
     
-}
+    window.onload = () => {
+        let button = document.querySelectorAll('boutons')
+        for(let button of buttons){
+          touche.addEventlistener("click", gererButton );
+          }
+        };
+    
+console.log ()
+    function gererButton(){
+        console.log(this)
+    // let touche= this.innertext;
 
-function Affiche(visbility){
-const input=document.createElement("button");
-const calcul=document.createElement("input");
-}
-function AssignButtons(){
-    document.getElementsByClassName('buttons').innerHTML='button'
+    // if (parseFloat (button) >= 0 || button==="."){
+    //     affichage= (affichage=== "")? touche.toStrisng() : affichage+ touche.toStrisng()
+    //     affElement.innertext=affichage
+    // }
 
-}
+    }
+
+
