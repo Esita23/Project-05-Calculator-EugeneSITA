@@ -2,7 +2,8 @@
 import{calculate}from "./calculator.js"
 
 // TODO: Faire la manipulation du DOM dans ce fichier
-// add var global
+
+// create var global
 
 const input = document.getElementById('input');
 const buttons = document.querySelectorAll('button');
@@ -14,7 +15,7 @@ document.querySelector('form').addEventListener('submit', event => {
 });
 
 input.disabled = true;
-// create fuction of the button
+// create fuction of the button Number
 function handleNumberInput(buttonValue) {
     input.value = input.value === '0' ? buttonValue : input.value + buttonValue;
     expression += buttonValue;
@@ -85,8 +86,8 @@ buttons.forEach(button => {
             } else {
                 if (input.value !== '') {
                     switch (buttonValue) {
-                        case '+':
                         case '-':
+                        case '+':
                         case '×':
                         case '÷':
                             handleOperatorInput(buttonValue);
