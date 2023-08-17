@@ -14,7 +14,7 @@ document.querySelector('form').addEventListener('submit', event => {
 });
 
 input.disabled = true;
-
+// create fuction of the button
 function handleNumberInput(buttonValue) {
     input.value = input.value === '0' ? buttonValue : input.value + buttonValue;
     expression += buttonValue;
